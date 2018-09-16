@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context="com.example.administrator.fb.MainActivity"
+
+    >
+
+<ImageView
+    android:id="@+id/imv_fb"
+    android:layout_marginLeft="@dimen/edt_magin_left"
+    android:layout_marginRight="@dimen/edt_magin_right"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="@dimen/edt_magin_bottom"
+    android:background="@drawable/image_facebook"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <!--đặt id cho ảnh rồi quy ước các lề đc gọi từ dimens-->
+    <!--đặt chiều cao kích thước ảnh-->
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@id/imv_fb"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded2_button"
+        android:hint="@string/hint_email_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--đặt id cho edit text-->
+    <!--dặt vị trí cho nó trên dưới trái phải-->
+    <!--đặt màu-->
+    <!--làm viền hình elip cho edit text ở rounded_button-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_pass"
+        android:layout_below="@id/edt_email"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded2_button"
+        android:hint="@string/hint_pass" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/edt_pass"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--thiết kế nút login-->
+    <!--nằm phía dưới edit text password-->
+    <!--làm viền tròn gọi từ rounded2_button-->
+    <!--đặt màu trắng cho chữ-->
+    <!--quy ước size ở textsize-->
+    <!--quy ước kiểu chữ-->
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/white"
+        android:text="@string/text_sign_up"
+        android:textSize="@dimen/text_size_small"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/btn_forgot"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:gravity="center"
+        android:layout_above="@id/btn_sign_up"
+        android:padding="@dimen/text_padding"
+        android:text="@string/text_forgot"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/t1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/xanh"
+        android:text="?"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+<!--làm nút có dấu chấm hỏi-->
+</RelativeLayout>
