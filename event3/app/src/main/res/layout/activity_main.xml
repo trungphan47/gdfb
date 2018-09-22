@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:stretchColumns="1"
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+
+        >
+        <TextView
+            android:text="Các kiểu lập trình sự kiên"
+            android:layout_span="2"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#005B00"
+            android:textColor="#FFFFFF"
+            />
+        <!--tạo text view để ghi các kiểu lập trình sự kiên-->
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Số a" android:textStyle="bold" />
+        <!--tạo text view số a-->
+        <EditText
+            android:id="@+id/editsoa"
+            android:hint="nhập a" />
+        <!--tạo edit text để nhập số a-->
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Số b"  android:textStyle="bold" />
+        <EditText
+            android:id="@+id/editsob"
+            android:hint="nhập b"
+            />
+        <!--tượng tự số a-->
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/txtkq"
+        android:text="txtk"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"/>
+    <!--tạo textview để in ra kq-->
+    <Button
+        android:id="@+id/tong2so"
+        android:text="Tổng 2 số"
+        android:onClick="btn_tong2so"
+        />
+    <!--Tạo nút tính tổng-->
+
+</TableLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">event</string>
+    <string name="hint_so_a">nhap a</string>
+    <string name="hint_so_b">nhap b</string>
+    <string name="text_so_a"> so a </string>
+    <string name="text_so_b"> so b </string>
+
+
+</resources>
